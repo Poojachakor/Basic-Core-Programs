@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome To Basic Core Programs");
-            Console.WriteLine("\n1:HeadAndTail\n2:LeapYear\n3:Powerof2\n4:HarmonicNumber\n11:Exit");
+            Console.WriteLine("\n1:HeadAndTail\n2:LeapYear\n3:Powerof2\n4:HarmonicNumber\n5:PrimeFactors\n11:Exit");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -21,6 +22,9 @@
                     break;
                 case 4:
                     HarmonicNumber.HarmonicValue();
+                    break;
+                case 5:
+                    PrimeFactors.PrimeFactor();
                     break;
                 default:
                     Console.WriteLine("choose the above options");
